@@ -7,7 +7,7 @@ public class Living : MonoBehaviour
     public float speed = 0.1f;
     public float rotationSpeed = 100.0f;
     Vector3 movpos;
-    public GameObject entity;
+    public GameObject currentity;
     public Transform entity_transform;
     public GameObject entity_weapon;
     public float health = 1.0f;

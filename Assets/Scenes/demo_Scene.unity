@@ -154,13 +154,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rate: 0.1
-  health: 1
-  defense: 1
   velocity: 100
   damage: 100
-  player: {fileID: 0}
+  entity: {fileID: 0}
   pattern: {fileID: 0}
-  player_transform: {fileID: 0}
+  weapon_transform: {fileID: 0}
 --- !u!212 &415634458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -337,6 +335,7 @@ GameObject:
   - component: {fileID: 911693752}
   - component: {fileID: 911693751}
   - component: {fileID: 911693750}
+  - component: {fileID: 911693753}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -361,6 +360,7 @@ MonoBehaviour:
   player: {fileID: 0}
   player_transform: {fileID: 0}
   weapon: {fileID: 415634456}
+  livingAttributes: {fileID: 0}
 --- !u!212 &911693751
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -429,6 +429,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &911693753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911693749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b684183eb15b56b4e98c5ccd3c7e73e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+  rotationSpeed: 100
+  currentity: {fileID: 0}
+  entity_transform: {fileID: 0}
+  entity_weapon: {fileID: 0}
+  health: 1
+  defense: 1
+  armor: None
 --- !u!1 &981043568
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,13 +565,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rate: 0.1
-  health: 1
-  defense: 1
   velocity: 100
   damage: 100
-  player: {fileID: 0}
+  entity: {fileID: 0}
   pattern: {fileID: 0}
-  player_transform: {fileID: 0}
+  weapon_transform: {fileID: 0}
 --- !u!114 &984232546
 MonoBehaviour:
   m_ObjectHideFlags: 0
